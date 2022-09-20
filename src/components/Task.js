@@ -5,7 +5,7 @@ function Task(props) {
 
     return (
         <li className="task">
-            <pan> Task 1</pan>
+            <span> Task 1</span>
             <input type="checkbox"/>
         </li>
     )

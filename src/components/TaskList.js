@@ -10,6 +10,7 @@ class TaskList extends Component {
                 <ul>
                     <Task />
                     <Task />
+                    <Task />
                 </ul>
             </div>
         )

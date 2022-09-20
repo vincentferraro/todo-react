@@ -7,8 +7,8 @@ class AddTask extends Component {
         return (
             <div className="add-task">
                 <label>
-                    Task:
-                    <input type="text"/>
+                    <span>Task:</span>
+                    <input className="text-input" type="text"/>
                 </label>
                 <button > Valider</button>
             </div>
