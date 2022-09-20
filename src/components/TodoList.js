@@ -2,6 +2,7 @@
 import '../styles/todoList.css'
 
 import AddTask from '../components/AddTask'
+import TaskList from '../components/TaskList'
 
 function TodoList(){
 
@@ -9,6 +10,7 @@ function TodoList(){
         return (
             <div className="todo-list">
                 <AddTask />
+                <TaskList />
             </div>
         )
     

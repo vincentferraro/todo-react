@@ -1,0 +1,15 @@
+.task-list{
+    width: auto;
+    margin:1rem;
+    border:1px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    border:1px solid green;
+    display: flex;
+    flex-direction: column;
+}
