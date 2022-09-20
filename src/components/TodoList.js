@@ -1,39 +1,48 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 
 import '../styles/todoList.css'
 import AddTask from '../components/AddTask'
 import Task from '../components/Task'
+
+
 
 class TodoList extends Component{
 
     constructor(props) {
         super(props)
         this.state={
-            text:''
+            text: '',
+            arr: ['text1','text2']
         }
+
+        
+        
+        this.handleChange = this.handleChange.bind(this)
         this.handleClick= this.handleClick.bind(this)
     }
 
-    handleClick(value) {
+    
+    handleChange(event) {
         this.setState({
-            text:value
+            text:event.target.value
         })
-        console.log('AddTask clicked')
-        console.log(this.state.text)
+
     }
     
-
+    handleClick(event) {
+        this.setState({arr:[...this.state.arr, this.state.text]})
+    }
+    
+    
 
 
     render() {
             return (
             <div className="todo-list">
-                    <AddTask handleClick={this.handleClick} />
+                    <AddTask handleChange={this.handleChange} handleClick={this.handleClick} />
                 <div className='task-list'>
-                    <ul>
-                        <Task task="tâche 1" />
-                        <Task task="tâche2"/>
-                        <Task />
+                    <ul id="list-task">
+                            {this.state.arr.map(t => <Task task={t}/>)}
                     </ul>
                 </div>
             </div>
