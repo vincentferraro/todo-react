@@ -1,4 +1,24 @@
-.AddTask{
-    height: 100px;
-    width: 200px;
+.add-task{
+    margin:1rem;
+    padding:1rem;
+ width:auto;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:1px solid black;
+    border-radius: 10px;
+}
+label{
+    display: flex;
+    flex-direction: row;
+    
+}
+input[type="text"]{
+    width: 8rem;
+    height: 3rem;
+}
+button{
+    width: 8rem;
+    height: 3rem;
 }

@@ -1,16 +1,19 @@
 import { Component } from 'react'
+import '../styles/AddTask.css'
 
 class AddTask extends Component {
 
     render() {
         return (
-            <div class="AddTask">
+            <div className="add-task">
                 <label>
                     Task:
                     <input type="text"/>
                 </label>
-                <button value="Ajouter"/>
+                <button > Valider</button>
             </div>
         )
     }
 }
+
+export default AddTask

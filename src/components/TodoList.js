@@ -1,12 +1,14 @@
 
 import '../styles/todoList.css'
 
+import AddTask from '../components/AddTask'
+
 function TodoList(){
 
 
         return (
-            <div class="todo-list">
-                
+            <div className="todo-list">
+                <AddTask />
             </div>
         )
     
