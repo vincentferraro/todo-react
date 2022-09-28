@@ -12,7 +12,7 @@ class TodoList extends Component{
         super(props)
         this.state={
             text: '',
-            arr: ['text1','text2']
+            arr: []
         }
 
         
@@ -38,11 +38,11 @@ class TodoList extends Component{
 
     render() {
             return (
-            <div className="todo-list">
+                <div className="todo-list">
                     <AddTask handleChange={this.handleChange} handleClick={this.handleClick} />
                 <div className='task-list'>
                     <ul id="list-task">
-                            {this.state.arr.map(t => <Task task={t}/>)}
+                            {this.state.arr.map((t, index) => <Task key={index} task={t}/>)}
                     </ul>
                 </div>
             </div>
